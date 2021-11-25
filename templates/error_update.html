@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+
+{% block title %} Tente novamente {% endblock %}
+{% block content %}
+<br>
+<h1>Ocorreu um erro ao salvar o conteúdo</h1>
+<br>
+<br>
+<div align="center">
+<p> Os campos <b>Assunto</b> e <b>Conteúdo</b> são obrigatórios</p>
+<p> Clique no botão abaixo para tentar novamente e lembre-se de preencher todos os campos</p>
+<br>
+<br>
+<br>
+ <button type="submit" class="btn btn-primary" style="text-decoration:none">
+            <a href="{{url_for('duvidas')}}">Tente novamente</a>
+ </button>
+</div>
+{% endblock %}

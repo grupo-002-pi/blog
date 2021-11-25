@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<title>{% block title %} Registrar {% endblock %}</title>
+<br>
+
+<h1>Registre suas dúvidas</h1>
+<br>
+<br>
+<form method="post">
+
+    <div class="form-group">
+        <label for="title">Assunto:</label>
+        <input type="text" name="title" placeholder="Digite o assunto" class="form-control" value="{{ request.form['title'] }}">
+    </div>
+    <br>
+
+    <div class="form-group">
+        <label for="content">Dúvida:</label>
+        <textarea name="content" placeholder="Digite sua dúvida" class="form-control">{{ request.form['content'] }}</textarea>
+    </div>
+    <br>
+
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary">Registrar</button>
+    </div>
+
+
+</div>
+</form>
+
+{% endblock %}

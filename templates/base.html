@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>{% block title%} {% endblock %}</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link href="../static/css/style.css" rel="stylesheet">
+
+        <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/3b07c2839e.js" crossorigin="anonymous"></script>
+        <script src="../static/js/progressbar.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+    </head>
+    <body>
+
+        <header>
+            <div class="container" id="nav-container">
+                <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+                   <a href="home" class="navbar-brand">
+                       <img src="../static/img/logo.png" alt="logo">
+                   </a>
+
+                   <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
+                       <div class="navbar-nav">
+
+                           <a class="nav-item nav-link" id="home" href="home">Home</span></a>
+
+                            <div class="btn-group">
+                                <a class = "btn" type="button" data-toggle = "dropdown" >
+                                    Conteúdos
+                                </a>
+                            <ul class = "dropdown-menu" >
+                                <a class="nav-item nav-link" id="meet" href="como_utilizar_meet">
+                                    Reuniões com Google Meet</a>
+                                <a class="nav-item nav-link" id="youtube" href="como_utilizar_youtube">
+                                    Postando vídeos no YouTube</a>
+                                <a class="nav-item nav-link" id="zoom" href="como_utilizar_zoom">
+                                    Reuniões com Zoom </a>
+                                <a class="nav-item nav-link" id="whats" href="como_utilizar_whats">
+                                    Grupos no Whatsapp </a>
+                            </ul>
+                            </div>
+
+                            <a class="nav-item nav-link" id="services-menu" href="duvidas">Dúvidas</a>
+
+                       </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+           {%block content %} {% endblock %}
+
+    </body>
+</html>

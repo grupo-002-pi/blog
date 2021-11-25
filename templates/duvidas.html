@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <title>{% block title %} Dúvidas {% endblock %}</title>
+    <br>
+    <h1> Dúvidas </h1>
+    <br>
+
+    <body>
+    <p align="center">Registre ou edite suas dúvidas:</p>
+    <br>
+    <div class="duvidas">
+    {% for questions in questions %}
+        <a href="{{ url_for('questions', questions_id=questions['id']) }}">
+            <h2>{{ questions['title'] }}</h2>
+        </a>
+         <span class="badge badge-primary">{{ questions['created'] }}</span>
+        <br>
+        <br>
+        <a href="{{ url_for('edit', id = questions['id']) }}">
+            <span class="badge badge-warning">Editar</span>
+        </a>
+        <hr>
+    {% endfor %}
+        <br>
+
+    </div>
+    <div class="button">
+        <button type="submit" class="btn btn-primary" style="text-decoration:none">
+            <a href="{{url_for('create')}}" >Registre sua dúvida</a>
+        </button>
+    </div>
+    <br>
+    </body>
+
+{% endblock %}

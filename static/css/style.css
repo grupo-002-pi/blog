@@ -1,0 +1,119 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #FFFFFF;
+    margin-top: 100px
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color: #4682B4;
+    font-weight: bold;
+    text-decoration:none;
+}
+
+.badge-warning{
+    font-color:#000000;
+    margin-left: 60px;
+}
+
+.badge-primary{
+    margin-left: 60px;
+}
+
+a {
+    color: inherit;
+}
+
+.container {
+    padding: 70px 0;
+}
+
+p, li{
+    color: #000000;
+    font-size: 20px;
+    margin-left: 60px;
+    margin-right: 50px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+h2{
+    color: #000000;
+    margin-left: 60px;
+}
+
+header, .navbar {
+    background-color: #4682B4;
+}
+
+#nav-container {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.navbar-brand {
+    padding: 10px;
+    color: #FFF;
+    margin-left: 20px;
+}
+
+.navbar-brand:hover {
+    color: #FFF;
+}
+
+#navbar-links a {
+    color: #FFF;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 1rem .8rem;
+}
+
+.imghome {
+    margin-left: 85px;
+    width:1100px;
+    height:575px;
+}
+
+h1{
+    text-align: center;
+}
+
+.row{
+   text-align: center;
+   margin-left: 430px;
+}
+
+.dropdown-menu{
+    margin-top: 10px;
+}
+
+.duvidas{
+    margin-left: 80px;
+    margin-right: 60px;
+}
+
+.dropdown-menu{
+       background-color: #4682B4;
+}
+
+.form-group{
+    margin-left: 80px;
+    margin-right: 60px;
+}
+
+.button{
+    margin-left: 130px;
+}
+
+.btn-secondary {
+     background-color: #4682B4;
+}
+
+.btn-group{
+    margin-top: 9px;
+    background-color: #4682B4;
+}
+
+
+
+
+

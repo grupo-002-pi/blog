@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<title>{% block title %} Reuniões com Google Meet {% endblock %}</title>
+<br>
+    <h1>Criando reuniões com Google Meet</h1>
+    <br>
+    <style type="text/css">
+	    img{border-radius: 20px;}
+	</style>
+    <div class="row">
+        <br>
+        <img src="../static/img/meeting.png" alt="meeting" width="370" height="190" align="center">
+    </div>
+
+    <body>
+        <br>
+        <br>
+        <p>A Google possui a ferramenta <a href="https://meet.google.com/"><b>Meet</b></a>, utilizada para reuniões com limite de 100(cem) pessoas duração máxima de 60(sessenta) minutos na versão gratuita </p>
+        <p>O Meet pode ser uma alternativa quando precisamos de interações em tempo real, utilizando câmeras e microfones</p>
+        <p>Abaixo, confira um tutorial de como criar suas reuniões: </p>
+
+        <p><b>1 - </b> Entre no <a href="https://meet.google.com/"><b>site</b></a> e clique em 'Iniciar uma reunião'</p>
+        <p><b>2 - </b> Será exibida uma tela de login, realize o login para continuar e clique em 'Próxima'</p>
+        <p><b>3 - </b> Ao clicar, sua reunião estará iniciada</p>
+        <p><b>4 - </b> Agora só copiar o link e compartilhar com os convidados! </p>
+
+    </body>
+
+{% endblock %}
